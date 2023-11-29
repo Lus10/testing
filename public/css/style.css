@@ -1,0 +1,19 @@
+div { 
+ background-color: rgb(179, 251, 253);
+}
+div p { color: black;}
+.container p {
+    display: flexbox; 
+    height: 60px;
+    width: 150px;
+    background-color: rgb(255, 90, 117);
+    flex-direction: row-reverse;
+}
+div body { margin: 50px  ;
+}
+div img { border: 50%;}
+div header { height: 50% ;
+width: 30%;
+background-color: red;
+color: red;}
+div p .container { flex-direction: column-reverse;}
