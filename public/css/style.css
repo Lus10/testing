@@ -1,19 +1,131 @@
-div { 
- background-color: rgb(179, 251, 253);
+/* ESTILOS COMUNES PARA TODA LA PAGINA*/
+* 
+{ box-sizing:
+    border-box;
+} 
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
-div p { color: black;}
-.container p {
-    display: flexbox; 
-    height: 60px;
-    width: 150px;
-    background-color: rgb(255, 90, 117);
-    flex-direction: row-reverse;
+img {
+    border-radius: 15px;
 }
-div body { margin: 50px  ;
+/*ESTILOS HEADER*/ 
+header {
+    padding: 40px;
+    text-align: center;
+    background-image: url(../imag/PORTADA1.jpg) ;
 }
-div img { border: 50%;}
-div header { height: 50% ;
-width: 30%;
-background-color: red;
-color: red;}
-div p .container { flex-direction: column-reverse;}
+header div {
+    padding: 20px;
+    border-top: 10px;
+    background-color: rgba(235, 212, 203, 0.479);
+    font-size: medium; 
+}
+div h1 {
+    color:#2B2D42; 
+}
+@media (max-width:1000px) { 
+    header { 
+        background-position: center;
+    }
+}
+/*ESTILOS NAVBAR*/ 
+.navbar {
+    display: flex; 
+    justify-content: center;
+    background-color: #890620;
+    position: sticky;
+    top: 0%;
+}
+.navbar img {
+    display: flex;
+    justify-content: left;
+    padding: 5px 
+    }
+.navbar link {
+    flex-direction: column;
+    position: left;
+}
+.navbar a {
+    color: #EDF2F4;
+    padding: 10px 25px;
+    text-decoration:none;
+}
+.navbar a:hover {
+     background-color: #DA9F93;
+     color: #B6465F;
+}
+@media (max-width:1000px) {
+    .navbar { 
+        flex-direction: column;
+        position: unset;
+    }
+    .navbar a { 
+        text-align: center;
+    }
+}
+/*ESTILOS PINCIPAL*/
+.principal { 
+    display: flex;
+    flex-wrap: wrap;
+}
+aside {
+    flex-basis: 30%;
+    background-color: #F8EDEB;
+    height: 1300px;
+    flex-direction: column-reverse;
+}
+aside img {
+    height: auto;
+    width: 70%;
+    object-fit: cover; 
+    
+}
+aside {
+    text-align: center;
+    padding: 50px;
+}
+main { 
+    flex-basis: 70%;
+    background-color: #F9DCC4;
+    height: 1300px;
+}
+main video {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+main img {
+    flex-direction: unset;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+/*ESTILOS FOOTER*/
+footer {
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #2B2D42;
+    color: #EDF2F4;
+    width: auto;
+}
+/*ESTILOS PINCIPAL DIAS*/
+
+img {
+   padding-top: 0%;
+   width: 100%;
+   height: 200%;
+}
+/*ESTILOS FOOTER*/
+footer {
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #2B2D42;
+    color: #EDF2F4;
+}
+/*ESTILOS PINCIPAL NOSOTROS*/
